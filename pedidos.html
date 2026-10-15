@@ -19,8 +19,81 @@
       </ul>
     </nav>
   </header>
+  <main>
+    <h1>Precios y pedidos</h1>
 
+    <section id="precios">
+      <h2>Tabla de precios</h2>
+      <table class="tabla">
+        <caption>Precios por tamaño de piñata</caption>
+        <thead>
+          <tr>
+            <th scope="col">Tamaño</th>
+            <th scope="col">Altura</th>
+            <th scope="col">Precio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th class="tabla__grupo" colspan="3" scope="colgroup">Piñatas de cartón</th>
+          </tr>
+          <tr>
+            <td>Chica</td>
+            <td>40 <abbr title="centímetros">cm</abbr></td>
+            <td>$25.000</td>
+          </tr>
+          <tr>
+            <td>Mediana</td>
+            <td>60 <abbr title="centímetros">cm</abbr></td>
+            <td><s>$45.000</s> <strong>$38.000</strong></td>
+          </tr>
+          <tr>
+            <td>Grande</td>
+            <td>90 <abbr title="centímetros">cm</abbr></td>
+            <td>$60.000</td>
+          </tr>
+        </tbody>
+      </table>
 
-    
+      <aside class="aviso">
+        <p><strong>Recuerda:</strong> los pedidos personalizados necesitan <em>5 días</em> de anticipación.</p>
+      </aside>
+    </section>
+
+    <section id="formulario" class="formulario">
+      <h2>Haz tu pedido</h2>
+      <form action="pedidos.html" method="get">
+        <div class="formulario__campo">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="formulario__campo">
+          <label for="correo">Correo electrónico</label>
+          <input type="email" id="correo" name="correo" required>
+        </div>
+        <div class="formulario__campo">
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono">
+        </div>
+        <div class="formulario__campo">
+          <label for="fecha">Fecha del evento</label>
+          <input type="date" id="fecha" name="fecha">
+        </div>
+        <div class="formulario__campo">
+          <label for="cantidad">Cantidad</label>
+          <input type="number" id="cantidad" name="cantidad" min="1" value="1">
+        </div>
+        <div class="formulario__campo">
+          <label for="detalle">Describe tu piñata</label>
+          <textarea id="detalle" name="detalle" rows="4"></textarea>
+        </div>
+        <button class="boton" type="submit">Enviar pedido</button>
+      </form>
+    </section>
+  </main>
+  <footer class="pie">
+    <p>&copy; 2026 Piñatería Fiesta Viva · Teléfono: 300 000 0000</p>
+    <p><a href="https://www.instagram.com/" target="_blank" rel="noopener">Síguenos en Instagram</a></p>
+  </footer>  
 </body>
 </html>
