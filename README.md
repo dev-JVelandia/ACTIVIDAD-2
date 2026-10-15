@@ -69,4 +69,4 @@ Con `@media (max-width: 480px)` el menú pasa de estar en línea a apilarse (`di
 | ![Inicio escritorio](capturas/index-escritorio.png) | ![Inicio móvil](capturas/index-movil.png) |
 | ![Pedidos escritorio](capturas/pedidos-escritorio.png) | ![Pedidos móvil](capturas/pedidos-movil.png) |
 
-Sitio publicado: *(enlace de GitHub Pages si lo usas)*
+
